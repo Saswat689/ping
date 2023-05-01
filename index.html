@@ -12,7 +12,7 @@
 "consistency is the biggest part of success"<br>
 "patience and perserverance is my motto"
 <hr>
-<p>count: <span id="count"></span></p>
+<p>count: <span id="count">0</span></p>
 <script type="text/javascript">
 	var count = 0
 	var countElem = document.getElementById('count')
@@ -25,7 +25,7 @@
 		.then(res => count++)
 		//exit if a problem occurs
 		.catch(err => clearInterval(ping))
-	},1000*60*14)
+	},1000*20)
 	
 </script>
 </body>
